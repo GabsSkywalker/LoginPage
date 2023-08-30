@@ -1,0 +1,622 @@
+@media only screen and (min-width: 1024px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .my-component {
+    background-image: url("./background.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  .center {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: none;
+  }
+
+  .Border {
+    display: flex;
+    background: antiquewhite;
+    width: auto;
+    height: auto;
+    place-items: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    border: solid 1px;
+    box-shadow: 5px 5px 15px rgb(27, 27, 27);
+    z-index: 1;
+    opacity: 0.8;
+  }
+
+  .Login-text {
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    margin-top: 5vh;
+    font-size: 7vh;
+    margin-bottom: 7vh;
+    color: #1a1111;
+  }
+  p {
+    font-size: 3.5vh;
+    padding: 9px;
+    margin-bottom: 3vh;
+    color: #1a1111;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .password {
+    width: 30vh;
+    position: relative;
+    background-color: transparent;
+    opacity: 1;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    padding: 4px;
+    margin-bottom: 2vh;
+    font-size: 2.5vh;
+  }
+  .password::placeholder {
+    color: black;
+    opacity: 0.5;
+  }
+
+  .username {
+    width: 30vh;
+    position: relative;
+    background-color: transparent;
+    opacity: 1;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    padding: 4px;
+    margin-bottom: 2vh;
+    font-size: 2.5vh;
+  }
+  .username::placeholder {
+    color: black;
+    opacity: 0.5;
+  }
+
+  .login {
+    width: 46vh;
+    height: 7vh;
+    position: relative;
+    margin-top: 37px;
+    background: linear-gradient( 90deg, rgba(191, 101, 143, 1) 0%, rgba(242, 178, 155, 1) 100% );
+    border: solid 1px;
+    border-radius: 10px;
+    margin-right: 7vh;
+    margin-left: 7vh;
+    margin-bottom: 7vh;
+    cursor: pointer;
+}
+  }
+
+@media (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .my-component {
+    background-image: url("./background.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  .center {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: none;
+  }
+
+  .Border {
+    display: flex;
+    background: antiquewhite;
+    width: auto;
+    height: auto;
+    place-items: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    border: solid 1px;
+    box-shadow: 5px 5px 15px rgb(27, 27, 27);
+    z-index: 1;
+    opacity: 0.8;
+  }
+
+  .Login-text {
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    margin-top: 5vh;
+    font-size: 7vh;
+    margin-bottom: 7vh;
+    color: #1a1111;
+  }
+  p {
+    font-size: 3.5vh;
+    padding: 9px;
+    margin-bottom: 3vh;
+    color: #1a1111;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .password {
+    width: 30vh;
+    position: relative;
+    background-color: transparent;
+    opacity: 1;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    padding: 4px;
+    margin-bottom: 2vh;
+    font-size: 2.5vh;
+  }
+  .password::placeholder {
+    color: black;
+    opacity: 0.5;
+  }
+
+  .username {
+    width: 30vh;
+    position: relative;
+    background-color: transparent;
+    opacity: 1;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    padding: 4px;
+    margin-bottom: 2vh;
+    font-size: 2.5vh;
+  }
+  .username::placeholder {
+    color: black;
+    opacity: 0.5;
+  }
+
+  .login {
+    width: 46vh;
+    height: 7vh;
+    position: relative;
+    margin-top: 37px;
+    background: linear-gradient(
+      90deg,
+      rgba(191, 101, 143, 1) 0%,
+      rgba(242, 178, 155, 1) 100%
+    );
+    border: solid 1px;
+    border-radius: 10px;
+    margin-right: 7vh;
+    margin-left: 7vh;
+    margin-bottom: 7vh;
+  }
+
+  @keyframes buttonClickAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .button-clicked {
+    animation: buttonClickAnimation 1.5s;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) and (orientation: landscape) {
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.my-component {
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 0; 
+    margin: 0; 
+    border: none; 
+  }
+  
+
+.center {
+    display: grid;
+    place-items: center; 
+    height: 100vh; 
+    background: none;
+}
+
+
+.Border{
+    display: flex;
+    background: antiquewhite;
+    width: auto;
+    height: auto;
+    place-items: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    border: solid 1px;
+    box-shadow: 5px 5px 15px rgb(27, 27, 27);
+    z-index: 1;
+    opacity: 0.8;
+   
+
+
+}
+
+.Login-text{
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    margin-top: 5vh;
+    font-size: 7vh;
+    margin-bottom: 7vh;
+    color:#1a1111;
+
+}
+p{
+    font-size: 3.5vh;
+    padding: 9px;
+    margin-bottom: 3vh;
+    color: #1a1111;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.password{
+    width: 30vh;
+    position: relative;
+    background-color: transparent;
+    opacity: 1;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    padding: 4px;
+    margin-bottom: 2vh;
+    font-size: 2.5vh;
+    
+
+}
+.password::placeholder{
+    color: black;
+    opacity: 0.5;
+}
+
+.username{
+    width: 30vh;
+    position: relative;
+    background-color: transparent;
+    opacity: 1;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    padding: 4px;
+    margin-bottom: 2vh;
+    font-size: 2.5vh;
+}
+.username::placeholder{
+    color: black;
+    opacity: 0.5;
+}
+
+.login{
+    width: 46vh;
+    height: 7vh;
+    position: relative;
+    margin-top: 37px;
+    background: linear-gradient(90deg, rgba(191,101,143,1) 0%, rgba(242,178,155,1) 100%);
+    border: solid 1px;
+    border-radius: 10px;
+    margin-right: 7vh;
+    margin-left: 7vh;
+    margin-bottom: 7vh;
+}
+
+@keyframes buttonClickAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .button-clicked {
+    animation: buttonClickAnimation 1.5s;
+  }
+  
+}
+@media (max-width: 767px) and (orientation: landscape){
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.my-component {
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 0; 
+    margin: 0; 
+    border: none; 
+  }
+  
+
+.center {
+    display: grid;
+    place-items: center; 
+    height: 100vh; 
+    background: none;
+}
+
+
+.Border{
+    display: flex;
+    background: antiquewhite;
+    width: auto;
+    height: auto;
+    place-items: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    border: solid 1px;
+    box-shadow: 5px 5px 15px rgb(27, 27, 27);
+    z-index: 1;
+    opacity: 0.8;
+   
+
+
+}
+
+.Login-text{
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    margin-top: 5vh;
+    font-size: 7vh;
+    margin-bottom: 7vh;
+    color:#1a1111;
+
+}
+p{
+    font-size: 3.5vh;
+    padding: 9px;
+    margin-bottom: 3vh;
+    color: #1a1111;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.password{
+    width: 30vh;
+    position: relative;
+    background-color: transparent;
+    opacity: 1;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    padding: 4px;
+    margin-bottom: 2vh;
+    font-size: 2.5vh;
+    
+
+}
+.password::placeholder{
+    color: black;
+    opacity: 0.5;
+}
+
+.username{
+    width: 30vh;
+    position: relative;
+    background-color: transparent;
+    opacity: 1;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    padding: 4px;
+    margin-bottom: 2vh;
+    font-size: 2.5vh;
+}
+.username::placeholder{
+    color: black;
+    opacity: 0.5;
+}
+
+.login{
+    width: 46vh;
+    height: 7vh;
+    position: relative;
+    margin-top: 37px;
+    background: linear-gradient(90deg, rgba(191,101,143,1) 0%, rgba(242,178,155,1) 100%);
+    border: solid 1px;
+    border-radius: 10px;
+    margin-right: 7vh;
+    margin-left: 7vh;
+    margin-bottom: 7vh;
+}
+
+@keyframes buttonClickAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .button-clicked {
+    animation: buttonClickAnimation 1.5s;
+  }
+  
+}
+
+@media (max-width: 767px) and (orientation: portrait){
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.my-component {
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 0; 
+    margin: 0; 
+    border: none; 
+  }
+  
+
+.center {
+    display: grid;
+    place-items: center; 
+    height: 100vh; 
+    background: none;
+}
+
+
+.Border{
+  display: flex;
+  background: antiquewhite;
+  width: 80%;
+  height: 73%;
+  place-items: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
+  border: solid 1px;
+  box-shadow: 5px 5px 15px rgb(27, 27, 27);
+  z-index: 1;
+  opacity: 0.8;
+}
+
+
+
+
+.Login-text{
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    margin-top: 5vh;
+    font-size: 7vh;
+    margin-bottom: 7vh;
+    color:#1a1111;
+
+}
+p{
+    font-size: 3.5vh;
+    padding: 9px;
+    margin-bottom: 3vh;
+    color: #1a1111;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.password{
+    width: 30vh;
+    position: relative;
+    background-color: transparent;
+    opacity: 1;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    padding: 4px;
+    margin-bottom: 2vh;
+    font-size: 2.5vh;
+    
+
+}
+.password::placeholder{
+    color: black;
+    opacity: 0.5;
+}
+
+.username{
+    width: 30vh;
+    position: relative;
+    background-color: transparent;
+    opacity: 1;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    padding: 4px;
+    margin-bottom: 2vh;
+    font-size: 2.5vh;
+}
+.username::placeholder{
+    color: black;
+    opacity: 0.5;
+}
+
+.login{
+  width: 32vh;
+  height: 7vh;
+  position: relative;
+  margin-top: 4vh;
+  background: linear-gradient(90deg, rgba(191,101,143,1) 0%, rgba(242,178,155,1) 100%);
+  border: solid 1px;
+  border-radius: 7px;
+  margin-right: 6vh;
+  margin-left: 7vh;
+  margin-bottom: 7vh;
+}
+
+@keyframes buttonClickAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .button-clicked {
+    animation: buttonClickAnimation 1.5s;
+  }
+  
+}
