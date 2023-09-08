@@ -4,7 +4,11 @@
     padding: 0px;
     box-sizing: border-box;
   }
-  .my-component {
+
+  p{
+    color: #1a1111;
+  }
+  #my-component {
     background-image: url("./background.jpg");
     background-size: cover;
     background-position: center;
@@ -17,45 +21,44 @@
     border: none;
   }
 
-  .center {
+  #center {
     display: grid;
     place-items: center;
     height: 100vh;
     background: none;
   }
 
-  .Border {
+  #Border {
     display: flex;
     background: antiquewhite;
     width: auto;
     height: auto;
-    place-items: center;
     flex-direction: column;
     align-items: center;
     border-radius: 5%;
     border: solid 1px;
     box-shadow: 5px 5px 15px rgb(27, 27, 27);
-    z-index: 1;
     opacity: 0.8;
   }
 
-  .Login-text {
+  #Login-text {
     font-family: "Oswald", sans-serif;
     position: relative;
-    margin-top: 5vh;
-    font-size: 7vh;
-    margin-bottom: 7vh;
-    color: #1a1111;
-  }
-  p {
+    margin-top: 3vh;
     font-size: 3.5vh;
-    padding: 9px;
+    margin-bottom: 4vh;
+    color: #1a1111;
+
+  }
+  .InputText {
+    font-size: 3vh;
+    padding: 3px;
     margin-bottom: 3vh;
     color: #1a1111;
     font-family: "Oswald", sans-serif;
   }
 
-  .password {
+  .input {
     width: 30vh;
     position: relative;
     background-color: transparent;
@@ -67,42 +70,41 @@
     margin-bottom: 2vh;
     font-size: 2.5vh;
   }
-  .password::placeholder {
+  .input::placeholder {
     color: black;
     opacity: 0.5;
   }
 
-  .username {
-    width: 30vh;
-    position: relative;
-    background-color: transparent;
-    opacity: 1;
-    border: none;
-    border-bottom: solid 1px;
-    outline: none;
-    padding: 4px;
-    margin-bottom: 2vh;
-    font-size: 2.5vh;
-  }
-  .username::placeholder {
-    color: black;
-    opacity: 0.5;
-  }
-
-  .login {
+  #login {
     width: 46vh;
     height: 7vh;
     position: relative;
-    margin-top: 37px;
-    background: linear-gradient( 90deg, rgba(191, 101, 143, 1) 0%, rgba(242, 178, 155, 1) 100% );
     border: solid 1px;
     border-radius: 10px;
     margin-right: 7vh;
     margin-left: 7vh;
-    margin-bottom: 7vh;
+    background: linear-gradient( 90deg, rgba(191, 101, 143, 1) 0%, rgba(242, 178, 155, 1) 100% );
+    margin-top: 6vh;
+    margin-bottom: 1vh;
     cursor: pointer;
 }
-  }
+#ifnot{
+  color: #1a1111;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 4vh;
+  margin-top: 3vh;
+  font-size: 2.2vh;
+}
+#ButtonChange{
+  border: none;
+  border-bottom: solid 1px;
+  font-family: "Oswald", sans-serif;
+  background:none ;
+  font-size: 2vh;
+  margin-left: 1vh;
+}
+
+}
 
 @media (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {
   * {
@@ -110,7 +112,8 @@
     padding: 0px;
     box-sizing: border-box;
   }
-  .my-component {
+  
+  #my-component {
     background-image: url("./background.jpg");
     background-size: cover;
     background-position: center;
@@ -123,14 +126,14 @@
     border: none;
   }
 
-  .center {
+  #center {
     display: grid;
     place-items: center;
     height: 100vh;
     background: none;
   }
 
-  .Border {
+  #Border {
     display: flex;
     background: antiquewhite;
     width: auto;
@@ -145,7 +148,7 @@
     opacity: 0.8;
   }
 
-  .Login-text {
+  #Login-text {
     font-family: "Oswald", sans-serif;
     position: relative;
     margin-top: 5vh;
@@ -161,7 +164,19 @@
     font-family: "Oswald", sans-serif;
   }
 
-  .password {
+  .InputText {
+    font-size: 3vh;
+    padding: 3px;
+    margin-bottom: 3vh;
+    color: #1a1111;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .InputText::placeholder {
+    color: black;
+    opacity: 0.5;
+  }
+  .input {
     width: 30vh;
     position: relative;
     background-color: transparent;
@@ -173,33 +188,16 @@
     margin-bottom: 2vh;
     font-size: 2.5vh;
   }
-  .password::placeholder {
+  .input::placeholder {
     color: black;
     opacity: 0.5;
   }
 
-  .username {
-    width: 30vh;
-    position: relative;
-    background-color: transparent;
-    opacity: 1;
-    border: none;
-    border-bottom: solid 1px;
-    outline: none;
-    padding: 4px;
-    margin-bottom: 2vh;
-    font-size: 2.5vh;
-  }
-  .username::placeholder {
-    color: black;
-    opacity: 0.5;
-  }
-
-  .login {
+  #login {
     width: 46vh;
     height: 7vh;
     position: relative;
-    margin-top: 37px;
+    margin-top: 6vh;
     background: linear-gradient(
       90deg,
       rgba(191, 101, 143, 1) 0%,
@@ -209,32 +207,32 @@
     border-radius: 10px;
     margin-right: 7vh;
     margin-left: 7vh;
-    margin-bottom: 7vh;
+  }
+  #ifnot{
+    color: #1a1111;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 4vh;
+    margin-top: 1vh;
+    font-size: 2.2vh;
+  }
+  #ButtonChange{
+    border: none;
+    border-bottom: solid 1px;
+    font-family: "Oswald", sans-serif;
+    background:none ;
+    font-size: 2vh;
+    margin-left: 1vh;
+  }
+  
   }
 
-  @keyframes buttonClickAnimation {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
-  .button-clicked {
-    animation: buttonClickAnimation 1.5s;
-  }
-}
 @media (max-width: 1024px) and (min-width: 768px) and (orientation: landscape) {
   *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-.my-component {
+#my-component {
     background-image: url('./background.jpg');
     background-size: cover;
     background-position: center;
@@ -248,7 +246,7 @@
   }
   
 
-.center {
+#center {
     display: grid;
     place-items: center; 
     height: 100vh; 
@@ -256,7 +254,7 @@
 }
 
 
-.Border{
+#Border{
     display: flex;
     background: antiquewhite;
     width: auto;
@@ -274,7 +272,7 @@
 
 }
 
-.Login-text{
+#Login-text{
     font-family: 'Oswald', sans-serif;
     position: relative;
     margin-top: 5vh;
@@ -306,66 +304,71 @@ p{
     
 
 }
-.password::placeholder{
+.InputText {
+  font-size: 3vh;
+  padding: 3px;
+  margin-bottom: 3vh;
+  color: #1a1111;
+  font-family: "Oswald", sans-serif;}
+
+.InputText::placeholder{
     color: black;
     opacity: 0.5;
 }
-
-.username{
-    width: 30vh;
-    position: relative;
-    background-color: transparent;
-    opacity: 1;
-    border: none;
-    border-bottom: solid 1px;
-    outline: none;
-    padding: 4px;
-    margin-bottom: 2vh;
-    font-size: 2.5vh;
+.input {
+  width: 30vh;
+  position: relative;
+  background-color: transparent;
+  opacity: 1;
+  border: none;
+  border-bottom: solid 1px;
+  outline: none;
+  padding: 4px;
+  margin-bottom: 2vh;
+  font-size: 2.5vh;
 }
-.username::placeholder{
-    color: black;
-    opacity: 0.5;
+.input::placeholder {
+  color: black;
+  opacity: 0.5;
 }
 
-.login{
+#login{
     width: 46vh;
     height: 7vh;
     position: relative;
-    margin-top: 37px;
+    margin-top: 8vh;
     background: linear-gradient(90deg, rgba(191,101,143,1) 0%, rgba(242,178,155,1) 100%);
     border: solid 1px;
     border-radius: 10px;
     margin-right: 7vh;
     margin-left: 7vh;
-    margin-bottom: 7vh;
 }
 
-@keyframes buttonClickAnimation {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .button-clicked {
-    animation: buttonClickAnimation 1.5s;
-  }
-  
+#ifnot{
+  color: #1a1111;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 4vh;
+  font-size: 2.2vh;
 }
+#ButtonChange{
+  border: none;
+  border-bottom: solid 1px;
+  font-family: "Oswald", sans-serif;
+  background:none ;
+  font-size: 2vh;
+  margin-left: 1vh;
+}
+
+}
+
 @media (max-width: 767px) and (orientation: landscape){
 
-  *{
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-.my-component {
+#my-component {
     background-image: url('./background.jpg');
     background-size: cover;
     background-position: center;
@@ -379,7 +382,7 @@ p{
   }
   
 
-.center {
+#center {
     display: grid;
     place-items: center; 
     height: 100vh; 
@@ -387,7 +390,7 @@ p{
 }
 
 
-.Border{
+#Border{
     display: flex;
     background: antiquewhite;
     width: auto;
@@ -405,7 +408,7 @@ p{
 
 }
 
-.Login-text{
+#Login-text{
     font-family: 'Oswald', sans-serif;
     position: relative;
     margin-top: 5vh;
@@ -423,71 +426,61 @@ p{
 
 }
 
-.password{
-    width: 30vh;
-    position: relative;
-    background-color: transparent;
-    opacity: 1;
-    border: none;
-    border-bottom: solid 1px;
-    outline: none;
-    padding: 4px;
-    margin-bottom: 2vh;
-    font-size: 2.5vh;
-    
+.InputText {
+  font-size: 3vh;
+  padding: 3px;
+  margin-bottom: 3vh;
+  color: #1a1111;
+  font-family: "Oswald", sans-serif;}
 
-}
-.password::placeholder{
+.InputText::placeholder{
     color: black;
     opacity: 0.5;
 }
-
-.username{
-    width: 30vh;
-    position: relative;
-    background-color: transparent;
-    opacity: 1;
-    border: none;
-    border-bottom: solid 1px;
-    outline: none;
-    padding: 4px;
-    margin-bottom: 2vh;
-    font-size: 2.5vh;
+.input {
+  width: 30vh;
+  position: relative;
+  background-color: transparent;
+  opacity: 1;
+  border: none;
+  border-bottom: solid 1px;
+  outline: none;
+  padding: 4px;
+  margin-bottom: 2vh;
+  font-size: 2.5vh;
 }
-.username::placeholder{
-    color: black;
-    opacity: 0.5;
+.input::placeholder {
+  color: black;
+  opacity: 0.5;
 }
 
-.login{
+#login{
     width: 46vh;
     height: 7vh;
     position: relative;
-    margin-top: 37px;
+    margin-top: 6vh;
     background: linear-gradient(90deg, rgba(191,101,143,1) 0%, rgba(242,178,155,1) 100%);
     border: solid 1px;
     border-radius: 10px;
     margin-right: 7vh;
     margin-left: 7vh;
-    margin-bottom: 7vh;
+}
+#ifnot{
+  color: #1a1111;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 4vh;
+  margin-top: 3vh;
+  font-size: 2.2vh;
+}
+#ButtonChange{
+  border: none;
+  border-bottom: solid 1px;
+  font-family: "Oswald", sans-serif;
+  background:none ;
+  font-size: 2vh;
+  margin-left: 1vh;
 }
 
-@keyframes buttonClickAnimation {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .button-clicked {
-    animation: buttonClickAnimation 1.5s;
-  }
-  
 }
 
 @media (max-width: 767px) and (orientation: portrait){
@@ -496,7 +489,7 @@ p{
     padding: 0px;
     box-sizing: border-box;
 }
-.my-component {
+#my-component {
     background-image: url('./background.jpg');
     background-size: cover;
     background-position: center;
@@ -510,7 +503,7 @@ p{
   }
   
 
-.center {
+#center {
     display: grid;
     place-items: center; 
     height: 100vh; 
@@ -518,7 +511,7 @@ p{
 }
 
 
-.Border{
+#Border{
   display: flex;
   background: antiquewhite;
   width: 80%;
@@ -536,17 +529,17 @@ p{
 
 
 
-.Login-text{
+#Login-text{
     font-family: 'Oswald', sans-serif;
     position: relative;
     margin-top: 5vh;
-    font-size: 7vh;
+    font-size: 3vh;
     margin-bottom: 7vh;
     color:#1a1111;
 
 }
 p{
-    font-size: 3.5vh;
+    font-size: 3vh;
     padding: 9px;
     margin-bottom: 3vh;
     color: #1a1111;
@@ -554,44 +547,36 @@ p{
 
 }
 
-.password{
-    width: 30vh;
-    position: relative;
-    background-color: transparent;
-    opacity: 1;
-    border: none;
-    border-bottom: solid 1px;
-    outline: none;
-    padding: 4px;
-    margin-bottom: 2vh;
-    font-size: 2.5vh;
-    
+.InputText {
+  font-size: 2.5vh;
+  padding: 3px;
+  margin-bottom: 3vh;
+  color: #1a1111;
+  font-family: "Oswald", sans-serif;}
 
-}
-.password::placeholder{
+.InputText::placeholder{
     color: black;
     opacity: 0.5;
 }
-
-.username{
-    width: 30vh;
-    position: relative;
-    background-color: transparent;
-    opacity: 1;
-    border: none;
-    border-bottom: solid 1px;
-    outline: none;
-    padding: 4px;
-    margin-bottom: 2vh;
-    font-size: 2.5vh;
+.input {
+  width: 20vh;
+  position: relative;
+  background-color: transparent;
+  opacity: 1;
+  border: none;
+  border-bottom: solid 1px;
+  outline: none;
+  padding: 4px;
+  margin-bottom: 2vh;
+  font-size: 2vh;
 }
-.username::placeholder{
-    color: black;
-    opacity: 0.5;
+.input::placeholder {
+  color: black;
+  opacity: 0.5;
 }
 
-.login{
-  width: 32vh;
+#login{
+  width: 28vh;
   height: 7vh;
   position: relative;
   margin-top: 4vh;
@@ -600,23 +585,21 @@ p{
   border-radius: 7px;
   margin-right: 6vh;
   margin-left: 7vh;
-  margin-bottom: 7vh;
+}
+#ifnot{
+  color: #1a1111;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 4vh;
+  font-size: 2vh;
+}
+#ButtonChange{
+  border: none;
+  border-bottom: solid 1px;
+  font-family: "Oswald", sans-serif;
+  background:none ;
+  font-size: 1.8vh;
+  margin-left: 1vh;
+
 }
 
-@keyframes buttonClickAnimation {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .button-clicked {
-    animation: buttonClickAnimation 1.5s;
-  }
-  
 }
