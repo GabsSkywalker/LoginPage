@@ -67,7 +67,7 @@ const Login = () => {
             <button id="login" type="submit">
               {register ? "Sign up" : "Login"}
             </button>
-            <p>{errorMessage}</p>
+            <p style={{color:"red"}}>{errorMessage}</p>
             <p id='ifnot'>
               {register ? "already user?" : "not registered?"}
               <button id='ButtonChange' onClick={() => setRegister(!register)}>
