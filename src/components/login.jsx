@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import appFireBase from '../credenciales';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import "./style.css"
 
 const auth = getAuth(appFireBase);
 
@@ -48,7 +49,7 @@ const Login = () => {
             <input
               type="text"
               className="input"
-              placeholder="Enter Your Username"
+              placeholder="Enter Your Email"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required

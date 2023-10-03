@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react';
 import Login from './components/login';
 import Home from './components/home';
-import "./static/style.css";
 //import firebase modules
 import appFireBase from './credenciales';
 import {getAuth , onAuthStateChanged} from "firebase/auth"
